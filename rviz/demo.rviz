@@ -1,0 +1,41 @@
+Panels:
+  - Class: rviz_common/Displays
+  - Class: rviz_common/Views
+  - Class: rviz_common/Tool Properties
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Value: true
+      Name: Field
+      Topic:
+        Value: /field_markers
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Value: true
+      Name: Camera Image
+      Topic:
+        Value: /sim_camera/image_raw
+  Enabled: true
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48; 48; 48
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic: /initialpose
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 14
+      Focal Point:
+        X: -2.0
+        Y: 0.0
+        Z: 0.0
+      Pitch: 1.1
+      Yaw: 1.57
+Window Geometry:
+  Width: 1280
+  Height: 800
